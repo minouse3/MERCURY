@@ -24,9 +24,8 @@ async def on_message(message):
     if message.author == bot.user:
         return
     
-    if "jokowi" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"{message.author.mention} HIDUP JOKOWI!!!")
+    if "hai" in message.content.lower():
+        await message.channel.send(f"{message.author.mention} Hai sayang, gimana kabarnya hari ini?")
     
     await bot.process_commands(message)
 
